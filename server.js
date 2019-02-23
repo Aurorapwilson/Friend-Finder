@@ -1,7 +1,8 @@
 //Dependencies
 //===============================================================
 const path = require('path');
-const express = require ('express');
+const express = require('express');
+const body_parser = require('body-parser');
 
 //Set up App
 //===============================================================
@@ -12,7 +13,10 @@ const app = express();
 app.get("/", function (req, res) {
     res.json(path.join(__dirname, "public/index.html"));
 });
-app.listen(PORT['app_port']);
+app.listen(PORT['app_port'], function () {
+    console.log("App is running: " + PORT)
+});
+
 
 //test code
 //==================================================================================
