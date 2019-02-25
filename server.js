@@ -7,12 +7,23 @@ const bodyParser = require('body-parser');
 //Set up App
 //===============================================================
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3308;
+
+
+// ================================================================================
+// ROUTER
+// The below points our server to a series of "route" files.
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
+// ================================================================================
+
+require("./routing/apiRoutes")(app);
+require("./routing/htmlRoutes")(app);
 
 
 //setting heroku server
 app.get("/", function (req, res) {
     res.json(path.join(__dirname, "public/index.html"));
+  
 });
 
 
@@ -34,14 +45,3 @@ app.listen(PORT['app_port'], function () {
     console.log("App is running: " + PORT)
 });
 
-//test code
-//==================================================================================
-
-// const PORT = process.env.PORT || 3000;
-
-// app.listen(PORT, function () {
-
-// });
-// app.get("/", function (req, res) {
-//     res.json(path.join(__dirname, "public/index.html"));
-// });
