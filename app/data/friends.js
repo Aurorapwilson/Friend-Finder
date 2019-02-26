@@ -2,9 +2,9 @@
 // Application's data inside of app/data/friends.js as an array of objects. 
 // Each of these objects should roughly follow the format below.
 const friendsArray = [{
-  "name":"Chaz",
-  "photo":"https://404store.com/2017/12/08/VH-Random-duckhourse.md.jpg",
-  "scores":[
+  name:"Chaz",
+  photo:"https://404store.com/2017/12/08/VH-Random-duckhourse.md.jpg",
+  scores:[
       5,
       1,
       4,
@@ -19,9 +19,9 @@ const friendsArray = [{
     
 },
 {
-    "name":"Becky",
-    "photo":"http://www.dumpaday.com/wp-content/uploads/2019/02/photos-9-2.jpg",
-    "scores":[
+    name:"Becky",
+    photo:"http://www.dumpaday.com/wp-content/uploads/2019/02/photos-9-2.jpg",
+    scores:[
         4,
         1,
         4,
@@ -36,9 +36,9 @@ const friendsArray = [{
   },
 
   {
-    "name":"Rigo",
-    "photo":"http://www.dumpaday.com/wp-content/uploads/2019/02/photos-1.jpg",
-    "scores":[
+    name:"Rigo",
+    photo:"http://www.dumpaday.com/wp-content/uploads/2019/02/photos-1.jpg",
+    scores:[
         5,
         2,
         4,
@@ -53,9 +53,9 @@ const friendsArray = [{
   },
 
   {
-    "name": "Joey",
-    "photo": "https://texashillcountry.com/wp-content/uploads/camel-teeth2-660x382.jpg",
-    "scores":[
+    name: "Joey",
+    photo: "https://texashillcountry.com/wp-content/uploads/camel-teeth2-660x382.jpg",
+    scores:[
         2,
         4,
         4,

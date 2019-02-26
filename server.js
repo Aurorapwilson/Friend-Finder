@@ -39,7 +39,9 @@
 // //===============================================================
 const express = require("express");
 const path = require('path');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
+
+//create server
 const app = express();
 const port = 3000;
 
@@ -47,6 +49,9 @@ const port = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// API Get
 app.get('/', (req, res) => res.send("Hallo"));
+//API PUT
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
